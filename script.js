@@ -1,14 +1,17 @@
 const myMessage = 'INSTRUCTIONS: You need to enter your age and day of week (capitalizing first letter of weekday), then select the movie. Finally, last step is to click the buttons in this order: Age, Day, and Movie. Then the program will print the ticket price to the screen and give you the option to print the page in hard copy.'
 alert(myMessage)
+let getage = 0
+let getday = 'friday'
+let getmovie = 'The Croods'
 // Gets user input for age
 document.getElementById('button').addEventListener('click', age)
-// Stores user input in the variable age
+// Stores user input in the variable getage
 function age () {
   getage = document.getElementById('input').value
 }
 // Gets user input for day
 document.getElementById('button2').addEventListener('click', day)
-// Stores user input in the variable day
+// Stores user input in the variable getday
 function day () {
   getday = document.getElementById('input2').value
   // Prints day to screen
@@ -24,7 +27,7 @@ for (i = 0; i < movies.length; i++) {
 document.getElementById('myloop').innerHTML = text
 // Gets user input for movie
 document.getElementById('button3').addEventListener('click', movie)
-// Stores user input in the variable movie
+// Stores user input in the variable getmovie
 function movie () {
   getmovie = document.getElementById('input3').value
   // Prints movie to screen
