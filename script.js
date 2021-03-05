@@ -1,51 +1,37 @@
-myMessage = "INSTRUCTIONS: You need to enter your age and day of week (capitalizing first letter of weekday), then select the movie. Finally, last step is to click the buttons in this order: Age, Day, and Movie. Then the program will print the ticket price to the screen and give you the option to print the page in hard copy.";
-alert(myMessage);
-var myMessage;
-
-
+let myMessage;
+myMessage = 'INSTRUCTIONS: You need to enter your age and day of week (capitalizing first letter of weekday), then select the movie. Finally, last step is to click the buttons in this order: Age, Day, and Movie. Then the program will print the ticket price to the screen and give you the option to print the page in hard copy.'
+alert(myMessage)
 // Gets user input for age
 document.getElementById('button').addEventListener('click', age)
-
 // Stores user input in the variable age
 function age () {
   age = document.getElementById('input').value
 }
-
 // Gets user input for day
 document.getElementById('button2').addEventListener('click', day)
-
 // Stores user input in the variable day
 function day () {
 day = document.getElementById('input2').value
-
 //prints day to screen
 document.getElementById('result2').innerHTML = day
 }
-
 //loop to display available movies
-var movies = ["The Croods 2", "Army of Darkness", "Freaky", "Stark Trek VI"];
-var text = "";
-var i;
+var movies = ['The Croods 2', 'Army of Darkness', 'Freaky', 'Stark Trek VI']
+var text = ''
+var i
 for (i = 0; i < movies.length; i++) {
-  text += movies[i] + "<br>";
+  text += movies[i] + '<br>'
 }
-document.getElementById("myloop").innerHTML = text;
-
+document.getElementById('myloop').innerHTML = text
 // Gets user input for movie
 document.getElementById('button3').addEventListener('click', movie)
-//document.getElementById('movie').addEventListener('change', movie)
-
 // Stores user input in the variable movie
 function movie () {
 movie = document.getElementById('input3').value
-
 //prints movie to screen
 document.getElementById('result3').innerHTML = movie
-
-
 ticket() 
 }
-
 //compare age and day to each if else if statement 
 function ticket() {
 var price;
@@ -60,4 +46,3 @@ var price;
    }
     document.getElementById("demo").innerHTML = price;
 }  
-
