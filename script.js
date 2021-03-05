@@ -12,11 +12,11 @@ document.getElementById('button2').addEventListener('click', day)
 // Stores user input in the variable day
 function day () {
   day = document.getElementById('input2').value
-// Prints day to screen
+  // Prints day to screen
   document.getElementById('result2').innerHTML = day
 }
 // Loop to display available movies
-let movies = ['The Croods 2', 'Army of Darkness', 'Freaky', 'Stark Trek VI']
+const movies = ['The Croods 2', 'Army of Darkness', 'Freaky', 'Stark Trek VI']
 let text = ''
 let i
 for (i = 0; i < movies.length; i++) {
@@ -28,21 +28,21 @@ document.getElementById('button3').addEventListener('click', movie)
 // Stores user input in the variable movie
 function movie () {
   movie = document.getElementById('input3').value
-// Prints movie to screen
+  // Prints movie to screen
   document.getElementById('result3').innerHTML = movie
   ticket()
 }
 // Compare age and day to each if else if statement
 function ticket () {
   let price
-    if (day == 'Tuesday') {
-     price = 'Cheapie Tuesdays $5.00'
+  if (day === 'Tuesday') {
+    price = 'Cheapie Tuesdays $5.00'
   } else if (age >= 65) {
-     price = 'Seniors $10.00'
+    price = 'Seniors $10.00'
   } else if (age <= 12) {
-     price = 'Juniors $8.00'
+    price = 'Juniors $8.00'
   } else {
-     price = 'General Admission $13.00'
+    price = 'General Admission $13.00'
   }
-    document.getElementById('demo').innerHTML = price
+  document.getElementById('demo').innerHTML = price
 }
