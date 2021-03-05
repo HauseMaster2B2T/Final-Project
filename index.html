@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <body>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>FINAL PROJECT</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+   <h1>Moviez</h1>
+   <h2>Current Movies Playing</h2>
+
+   <div class="Centering">
+
+   <!--This sets up image for available movies and makes them clickable and opens IMDB page for each movie-->
+   <a href="https://www.imdb.com/title/tt2850386/?ref_=vp_vi_tt/" target="_new"><img src="croods.jpg" alt="Croods Movie"></a>
+    
+   <a href="https://www.imdb.com/title/tt0106308/?ref_=fn_al_tt_1/" target="_new"><img src="army.jpg" alt="Army of Darkness Movie"></a>
+
+   <a href="https://www.imdb.com/title/tt10919380/?ref_=fn_al_tt_1/" target="_new"><img src="freaky.jpg" alt="Freaky Movie"></a>
+
+   <a href="https://www.imdb.com/title/tt0102975/?ref_=fn_al_tt_1/" target="_new"><img src="star-trek.jpg" alt="Star Trek VI Movie"></a>
+   </div>
+   <div id="Spacing"></div>
+   <div class="Centering"></div>
+   
+   <br>
+   <br>
+   <!--This sets up input button for age-->
+   <input type ="text" id="input"> 
+   <button id="button">Age</button> 
+ 
+   <!--This sets up input button for day-->
+   <input type ="text" id="input2"> 
+   <button id="button2">Day</button> 
+
+   
+   
+   <!--This prints the list of movies-->
+   <p>Select from the following movies:</p>
+   <p id="myloop"></p>
+
+   <!--This sets up input button for movie-->
+   <input type ="text" id="input3"> 
+   <button id="button3">Movie</button>
+ 
+   <br>
+   <br>
+   <p>Print and cut movie ticket below dashed line</p> 
+   <p>-----------------------------------------------------------------------------------------------------------------------</p>
+   <br>
+   <br>
+   <br>   
+   <!--Prints the movie selected-->
+   <p>The movie you selected is: 
+   <span id ="result3"></span>
+   </p>   
+   <!--Prints the day entered-->
+   <p> The day you selected is: 
+   <span id ="result2"></span>
+   <p>
+   <!--Prints the ticket price-->
+   <p> The ticket price is: $ 
+   <span id ="demo"><span></p>
+
+   <!--Prints a happy face and social media-->
+      <pre style="font-size:36px">&#128525;Enjoy the show!!   @moviez      moviez.com</pre>
+      
+   <script src="script.js"></script>
+
+   <!--Allows user to print page/ticket--> 
+   <button onclick="window.print()">Print Ticket</button>  
+ </body>
+</html>
