@@ -1,4 +1,3 @@
-let myMessage
 myMessage = 'INSTRUCTIONS: You need to enter your age and day of week (capitalizing first letter of weekday), then select the movie. Finally, last step is to click the buttons in this order: Age, Day, and Movie. Then the program will print the ticket price to the screen and give you the option to print the page in hard copy.'
 alert(myMessage)
 // Gets user input for age
@@ -35,7 +34,7 @@ function movie () {
 // Compare age and day to each if else if statement
 function ticket () {
   let price
-  if (day === 'Tuesday') {
+  if (day === 'Tuesday' || day === 'tuesday' || day === 'tues' || day === 'Tues') {
     price = 'Cheapie Tuesdays $5.00'
   } else if (age >= 65) {
     price = 'Seniors $10.00'
